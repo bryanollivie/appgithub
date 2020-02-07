@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">exampleModule</string>
+
+    <string name="error_401">Não autorizado</string>
+    <string name="error_400_generic">Erro</string>
+    <string name="error_500_generic">Erro</string>
+
+</resources>

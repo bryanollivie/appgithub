@@ -1,0 +1,124 @@
+ext {
+
+    //Android Config
+    minSDK = 20
+    targetSDK = 28
+    compileSDK = 28
+
+    buildTools = '3.5.3'
+
+    appCompactVersion = '1.1.0'
+    supportVersion = "28.0.0"
+    kotlinVersion = '1.3.61'
+
+    AndroidArchVersion = '1.1.1'
+    databindingVersion = '3.1.4'
+    lifeCycleVersion = '2.0.0'
+    lifeCycleExtensions = '2.1.0'
+    ktxVersion = '1.0.1'
+
+    constrainVersion = '1.1.3'
+    cardViewVersion = '1.0.0'
+    recyclerViewVersion = '1.0.0'
+
+    //Rx
+    rxJavaVersion = '2.2.7'
+    rxKotlinVersion = '2.2.0'
+    rxAndroidVersion = '2.1.1'
+
+    //Koin
+    koinVersion = '2.0.0-rc-1'
+
+    //Retrofit
+    retrofitVersion = '2.3.0'
+
+    //Gson
+    gsonVersion = '2.8.5'
+
+    //Room version
+    roomVersion = '2.1.0-alpha06'
+
+    //Test
+    junitVersion = '4.12'
+    espressoVersion = '3.1.1'
+    runnerVersion = '1.1.1'
+
+    //Firebase
+    firebaseCore = '17.2.1'
+
+    //UtilCode
+    utilCode = '1.16.4'
+
+    //WorkRuntime
+    workRuntime = '1.0.1'
+    workFirebase = '1.0.0-alpha11'
+
+    //Preferences
+    prefHelper = '1.3.2'
+
+    //Stetho
+    stetho = '1.5.1'
+
+    //Lottie
+    lottieAnimation = '3.3.0'
+
+    moshiVersion = '1.8.0'
+
+    picassoVersion = '2.71828'
+
+    dependencies = [
+            kotlin                : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
+
+            appCompact            : "androidx.appcompat:appcompat:$appCompactVersion",
+            appCompactV7          : "com.android.support:appcompat-v7:$supportVersion",
+            constraintlayout      : "androidx.constraintlayout:constraintlayout:$constrainVersion",
+            cardView              : "androidx.cardview:cardview:$cardViewVersion",
+            recyclerView          : "androidx.recyclerview:recyclerview:$recyclerViewVersion",
+            picasso               : "com.squareup.picasso:picasso:$picassoVersion",
+
+            viewModel             : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifeCycleVersion",
+            lifeCycle             : "android.arch.lifecycle:extensions:$AndroidArchVersion",
+            lifeCycleExtensions   : "androidx.lifecycle:lifecycle-extensions:$lifeCycleExtensions",
+
+            dataBinding           : "com.android.databinding:compiler:$databindingVersion",
+
+            ktx                   : "androidx.core:core-ktx:$ktxVersion",
+
+            rxJava                : "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
+            rxKotlin              : "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion",
+            rxAndroid             : "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion",
+
+            koin                  : "org.koin:koin-android:$koinVersion",
+            koinViewModel         : "org.koin:koin-androidx-viewmodel:$koinVersion",
+
+            retrofit              : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitRxAdapter     : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+            gson                  : "com.google.code.gson:gson:$gsonVersion",
+            moshi                 : "com.squareup.moshi:moshi:$moshiVersion",
+            moshiCodegen          : "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion",
+            retrofitGsonConverter : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            moshiConverter        : "com.squareup.retrofit2:converter-moshi:$retrofitVersion",
+
+            room                  : "androidx.room:room-runtime:$roomVersion",
+            roomRxJava            : "androidx.room:room-rxjava2:$roomVersion",
+            roomCompiler          : "androidx.room:room-compiler:$roomVersion",
+
+            firebaseCore          : "com.google.firebase:firebase-core:$firebaseCore",
+
+            utilCode              : "com.blankj:utilcode:1.16.4:$utilCode",
+
+            workRuntime           : "android.arch.work:work-runtime:$workRuntime",
+            workFirebase          : "android.arch.work:work-firebase:$workFirebase",
+
+            prefHelper            : "com.github.tntkhang:preferences-helper:$prefHelper",
+
+            stetho                : "com.facebook.stetho:stetho::$stetho",
+
+            lottieAnimation       : "com.airbnb.android:lottie:$lottieAnimation"
+    ]
+    testDependecies = [
+            junit                 : "junit:junit:$junitVersion",
+            espresso              : "androidx.test.espresso:espresso-core:$espressoVersion",
+            runner                : "androidx.test:runner:$runnerVersion"
+    ]
+}

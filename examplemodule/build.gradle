@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration["compileSDK"]
+
+    defaultConfig {
+        minSdkVersion globalConfiguration["minSDK"]
+        targetSdkVersion globalConfiguration["targetSDK"]
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    def dependencies = rootProject.ext.dependencies
+
+    implementation project(path: ':sdk')
+
+    implementation dependencies.appCompactV7
+    implementation dependencies.constraintlayout
+    implementation dependencies.kotlin
+    implementation dependencies.rxJava
+    implementation dependencies.koin
+    implementation dependencies.lifeCycle
+    implementation dependencies.lifeCycleExtensions
+    implementation dependencies.recyclerView
+
+    implementation dependencies.retrofit
+    implementation dependencies.retrofitRxAdapter
+    implementation dependencies.retrofitGsonConverter
+    implementation dependencies.gson
+    implementation dependencies.moshi
+    implementation dependencies.moshiConverter
+    implementation dependencies.picasso
+    implementation dependencies.constraintlayout
+    implementation dependencies.cardView
+
+    implementation dependencies.room
+    implementation dependencies.roomRxJava
+    implementation dependencies.appCompact
+    kapt dependencies.roomCompiler
+    kapt dependencies.moshiCodegen
+
+
+}

@@ -1,0 +1,2 @@
+include ':app', ':sdk', ':examplemodule'
+rootProject.name='ExampleMvvm'
